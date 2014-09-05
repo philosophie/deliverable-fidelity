@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>Picklejar</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
@@ -17,20 +17,100 @@
     
     <div class="row">
       <div class="large-12 columns">
-        <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Choose what you need to test</button><br>
-          <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
-            <li><a href="learnability.html">Learnability</a></li>
-            <li><a href="efficiency.html">Efficiency</a></li>
-            <li><a href="memorability.html">Memorability</a></li>
-            <li><a href="errors.html">Errors</a></li>
-            <li><a href="satisfaction.html">Satisfaction</a></li>
+        <h2>What are you testing?</h2>
+          <ul data-magellan-expedition class="small-block-grid-1 medium-block-grid-2">
+            <li data-magellan-arrival="learnability"><a href="#learnability">
+              <h3>Learnability</h3>
+              <p>How easy is it for users to accomplish basic tasks the first time they encounter the design?</p>
+            </a></li>
+            <li data-magellan-arrival="efficiency"><a href="#efficiency">
+              <h3>Efficiency</h3>
+              <p>Once users have learned the design, how quickly can they perform tasks?</p>
+            </a></li>
+            <li data-magellan-arrival="memorability"><a href="#memorability">
+              <h3>Memorability</h3>
+              <p>When users return to the design after a period of not using it, how easily can they reestablish proficiency?</p>
+            </a></li>
+            <li data-magellan-arrival="errors"><a href="#errors">
+              <h3>Errors</h3>
+              <p>How many errors do users make, how severe are these errors, and how easily can they recover from the errors?</p>
+            </a></li>
+            <li data-magellan-arrival="satisfaction"><a href="#satisfaction">
+              <h3>Satisfaction</h3>
+              <p>How pleasant is it to use the design?</p>
+            </a></li>
           </ul>
       </div>
     </div>
 
+    <div class="row">
+      <div class="large-12 columns">
+        <article id="learnability" data-magellan-destination="learnability">
+          <header>
+            <h3>So you're testing <strong>learnability</strong>?</h3>
+          </header>
+          <section>
+            <p>You should use <em>paper prototypes</em>! Paper prototypes are quick and disposable.</p>
+          </section>
+          <footer>
+            <p>Learn more here: <a href="http://alistapart.com/article/paperprototyping">Paper Prototyping on A List Apart</a></p>
+          </footer>
+        </article>
+
+        <article id="efficiency" data-magellan-destination="efficiency">
+          <header>
+            <h3>So you're testing <strong>efficiency</strong>?</h3>
+          </header>
+          <section>
+            <p>You should use <em>video prototypes</em>! Video prototypes are quick and disposable.</p>
+          </section>
+          <footer>
+            <p>Learn more here: <a href="http://ixdcth.se/courses/2013/ciu175/node/270">Video Prototyping on ID&T</a></p>
+          </footer>
+        </article>
+
+        <article id="memorability" data-magellan-destination="memorability">
+          <header>
+            <h3>So you're testing <strong>memorability</strong>?</h3>
+          </header>
+          <section>
+            <p>You should use <em>video prototypes</em>! Video prototypes are quick and disposable.</p>
+          </section>
+          <footer>
+            <p>Learn more here: <a href="http://ixdcth.se/courses/2013/ciu175/node/270">Video Prototyping on ID&T</a></p>
+          </footer>
+        </article>
+
+        <article id="errors" data-magellan-destination="errors">
+          <header>
+            <h3>So you're testing <strong>efficiency</strong>?</h3>
+          </header>
+          <section>
+            <p>You should use <em>video prototypes</em>! Video prototypes are quick and disposable.</p>
+          </section>
+          <footer>
+            <p>Learn more here: <a href="http://ixdcth.se/courses/2013/ciu175/node/270">Video Prototyping on ID&T</a></p>
+          </footer>
+        </article>
+
+        <article id="satisfaction" data-magellan-destination="satisfaction">
+          <header>
+            <h3>So you're testing <strong>satisfaction</strong>?</h3>
+          </header>
+          <section>
+            <p>You should use <em>video prototypes</em>! Video prototypes are quick and disposable.</p>
+          </section>
+          <footer>
+            <p>Learn more here: <a href="http://ixdcth.se/courses/2013/ciu175/node/270">Video Prototyping on ID&T</a></p>
+          </footer>
+        </article>                        
+      </div>
+    </div>
+
+
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.dropdown.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.magellan.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
