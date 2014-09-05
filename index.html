@@ -1,0 +1,36 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>    
+
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Pick the Right Prototype</h1>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="large-12 columns">
+        <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Choose what you need to test</button><br>
+          <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
+            <li><a href="">Learnability</a></li>
+            <li><a href="#">Efficiency</a></li>
+            <li><a href="#">Memorability</a></li>
+            <li><a href="#">Errors</a></li>
+            <li><a href="#">Satsifaction</a></li>
+          </ul>
+      </div>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.dropdown.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
